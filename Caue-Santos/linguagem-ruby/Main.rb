@@ -6,5 +6,6 @@ bubbleSort = BubbleSort.new
 fatorial = Fatorial.new
 linearSearch = LinearSearch.new
 
+puts bubbleSort.calcula()
 puts fatorial.calcula()
 puts linearSearch.calcula()
