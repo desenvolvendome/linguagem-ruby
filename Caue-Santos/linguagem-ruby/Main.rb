@@ -7,3 +7,4 @@ fatorial = Fatorial.new
 linearSearch = LinearSearch.new
 
 puts fatorial.calcula()
+puts linearSearch.calcula()
