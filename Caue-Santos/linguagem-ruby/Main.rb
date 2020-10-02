@@ -5,3 +5,5 @@ require_relative "LinearSearch.rb"
 bubbleSort = BubbleSort.new
 fatorial = Fatorial.new
 linearSearch = LinearSearch.new
+
+puts fatorial.calcula()
