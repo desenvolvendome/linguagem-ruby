@@ -1,4 +1,5 @@
 require_relative "algorithms/Factorial.rb"
+require_relative "algorithms/LinearSearch.rb"
 
 
 
@@ -24,10 +25,13 @@ class Main
             
             if(option < 0 or option > 3)
                 puts "\n\nOpss, opção invalida!"
+
             elsif (option == 1)
                 factorial()
+
             elsif (option == 2)
-                search()
+                linearSearch()
+
             else
                 bubbleSort()
             end
@@ -45,7 +49,25 @@ class Main
         print "\nDigite o número que deseja fatorar: "
         number = gets.to_i
 
-        puts obj.factorial(number)
+        puts "Fatorial ", obj.factorial(number)
+    end
+
+    #----------------------------------------------
+
+    def linearSearch()
+
+        obj = LinearSearch.new()
+
+        numbers = [2, 5, 777, 7, 4, 7, 1, 8, 53, 68, 249, 649 ,2559, 60]
+
+        result = obj.search(numbers, 777)
+
+        if (result == -1)
+            puts "Opa, esse numero não está na lista! =("
+        else
+            puts "Está na posição: ", obj.search(numbers, 777)
+        end
+
     end
 
 end
