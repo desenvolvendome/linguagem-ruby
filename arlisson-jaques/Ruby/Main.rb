@@ -1,5 +1,6 @@
 require_relative "algorithms/Factorial.rb"
 require_relative "algorithms/LinearSearch.rb"
+require_relative "algorithms/BubbleSort.rb"
 
 
 
@@ -68,6 +69,14 @@ class Main
             puts "Está na posição: ", obj.search(numbers, 777)
         end
 
+    end
+
+    #-------------------------------------------------
+
+    def bubbleSort()
+
+        obj = BubbleSort.new
+        obj.inTheEnd()
     end
 
 end
