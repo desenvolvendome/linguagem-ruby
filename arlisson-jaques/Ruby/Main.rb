@@ -60,13 +60,17 @@ class Main
         obj = LinearSearch.new()
 
         numbers = [2, 5, 777, 7, 4, 7, 1, 8, 53, 68, 249, 649 ,2559, 60]
+        print numbers
+
+        print "\nDigite o numero que deseja buscar: "
+        num = gets.to_i
 
         result = obj.search(numbers, 777)
 
         if (result == -1)
             puts "Opa, esse numero não está na lista! =("
         else
-            puts "Está na posição: ", obj.search(numbers, 777)
+            puts "Está na posição: ", obj.search(numbers, num)
         end
 
     end
