@@ -65,7 +65,7 @@ class Main
         print "\nDigite o numero que deseja buscar: "
         num = gets.to_i
 
-        result = obj.search(numbers, 777)
+        result = obj.search(numbers, num)
 
         if (result == -1)
             puts "Opa, esse numero não está na lista! =("
@@ -79,8 +79,15 @@ class Main
 
     def bubbleSort()
 
-        obj = BubbleSort.new
-        obj.inTheEnd()
+        list = [15, 4, 12, 14, 9, 3, 7, 13, 5, 10, 2, 6, 1, 11, 8]
+
+        print "Cluttered list: #{list}\n\n"
+
+        obj = BubbleSort.new()
+        newList = obj.order(list)
+
+        print "Ordered list: #{newList}\n"
+
     end
 
 end
