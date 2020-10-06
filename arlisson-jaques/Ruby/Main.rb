@@ -50,7 +50,7 @@ class Main
         print "\nDigite o número que deseja fatorar: "
         number = gets.to_i
 
-        puts "Fatorial ", obj.factorial(number)
+        puts "Fatorial de #{number} é: #{obj.factorial(number)}"
     end
 
     #----------------------------------------------
@@ -70,7 +70,7 @@ class Main
         if (result == -1)
             puts "Opa, esse numero não está na lista! =("
         else
-            puts "Está na posição: ", obj.search(numbers, num)
+            puts "O número #{num} está na #{obj.search(numbers, num)}º posição" 
         end
 
     end

@@ -1,9 +1,7 @@
 class BubbleSort
 
     def order(list)
-
-    
-
+        
         while true
             sw = false
 
