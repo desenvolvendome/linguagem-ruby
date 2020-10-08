@@ -50,7 +50,7 @@ class Main
         print "\nDigite o número que deseja fatorar: "
         number = gets.to_i
 
-        puts "Fatorial ", obj.factorial(number)
+        puts "Fatorial de #{number} é: #{obj.factorial(number)}"
     end
 
     #----------------------------------------------
@@ -60,13 +60,17 @@ class Main
         obj = LinearSearch.new()
 
         numbers = [2, 5, 777, 7, 4, 7, 1, 8, 53, 68, 249, 649 ,2559, 60]
+        print numbers
 
-        result = obj.search(numbers, 777)
+        print "\nDigite o numero que deseja buscar: "
+        num = gets.to_i
+
+        result = obj.search(numbers, num)
 
         if (result == -1)
             puts "Opa, esse numero não está na lista! =("
         else
-            puts "Está na posição: ", obj.search(numbers, 777)
+            puts "O número #{num} está na #{obj.search(numbers, num)}º posição" 
         end
 
     end
@@ -75,8 +79,15 @@ class Main
 
     def bubbleSort()
 
-        obj = BubbleSort.new
-        obj.inTheEnd()
+        list = [15, 4, 12, 14, 9, 3, 7, 13, 5, 10, 2, 6, 1, 11, 8]
+
+        print "Cluttered list: #{list}\n\n"
+
+        obj = BubbleSort.new()
+        newList = obj.order(list)
+
+        print "Ordered list: #{newList}\n"
+
     end
 
 end
